@@ -3,7 +3,7 @@
 #include <limits.h>
 #include <stdio.h>
 #include <string.h>
-#include "printf.h"
+#include "main.h"
 
 /**
 * _printf - prints output according to a format.
