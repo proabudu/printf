@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include <limits.h>
 #include <string.h>
+#include "printf.h"
 
 int _printf(const char *format, ...);
 int main() {
