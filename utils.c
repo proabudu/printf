@@ -1,5 +1,6 @@
 #include <unistd.h>
 #include "main.h"
+#include "string_utils.h"
 
 /* Declare the _str_reverse function */
 void _str_reverse(char *str);
