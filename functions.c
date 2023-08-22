@@ -83,13 +83,13 @@ int handle_conversion(const char *format, va_list args)
             count += _print_u(args);
             break;
         case 'o':
-            // Call _print_o function...
+            /*  Call _print_o function... */
             break;
         case 'x':
         case 'X':
-            // Call _print_x function...
+            /*  Call _print_x function... */
             break;
-        // Add cases for other conversion specifiers...
+        /*  Add cases for other conversion specifiers... */
         default:
             write(1, format - 1, 1);
             write(1, format, 1);
