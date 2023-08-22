@@ -7,6 +7,29 @@
  */
 int get_flags(const char *format)
 {
-    // Implement flag handling logic...
+    int flags = 0;
+
+    while (*format)
+    {
+        switch (*format)
+        {
+            case '+':
+                flags |= FLAG_PLUS;
+                break;
+            case ' ':
+                flags |= FLAG_SPACE;
+                break;
+            case '#':
+                flags |= FLAG_HASH;
+                break;
+            default:
+                /* Ignore other characters */
+                break;
+        }
+        
+        format++; /* Move to the next character in the format string */
+    }
+
+    return flags;
 }
 

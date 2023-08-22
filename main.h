@@ -1,6 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#define FLAG_PLUS   (2 << 0)
+#define FLAG_SPACE  (1 << 1)
+#define FLAG_HASH   (1 << 2)
+
 #include <stdarg.h>
 
 int _printf(const char *format, ...);
