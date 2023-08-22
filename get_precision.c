@@ -8,6 +8,41 @@
  */
 int get_precision(const char *format, va_list args)
 {
-    // Implement precision handling logic...
+    int precision = -1; /*  Default value for no precision specified */
+
+    if (format == NULL)
+        return (-1);
+
+    /*  Find the dot ('.') that indicates the start of precision specifier */
+    while (*format && *format != '.')
+    {
+        format++;
+    }
+
+    if (*format == '.')
+    {
+        /*  Precision specifier found, move to the next character */
+        format++;
+
+/* parse  the precision value from the format string */
+        if (*format == '*')
+        {
+/* Handle '*' (variable precision) case */
+            precision = va_arg(args, int);
+            format++; /*  Move past '*' */
+        }
+        else
+        {
+/*  Parse numeric precision value */
+           precision = 0;
+            while (*format >= '0' && *format <= '9')
+            {
+                precision = precision * 10 + (*format - '0');
+                format++;
+            }
+        }
+    }
+
+    return precision;
 }
 
