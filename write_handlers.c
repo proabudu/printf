@@ -1,6 +1,11 @@
 #include <unistd.h>
 #include "main.h"
 
+char *_itoa(int num, char *str);
+int _strlen(const char *str);
+char *_utoa(unsigned int num, char *str);
+char *_utoa_base(unsigned int num, char *str, int base, int uppercase);
+
 /**
  * write_string - Write a string to the standard output
  * @str: String to write

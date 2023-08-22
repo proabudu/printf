@@ -26,5 +26,10 @@ int get_size(const char *format);
 
 int write_handlers(const char *str, int len);
 
+char *_itoa(int num, char *str);
+int _strlen(const char *str);
+char *_utoa(unsigned int num, char *str);
+char *_utoa_base(unsigned int num, char *str, int base, int uppercase);
+
 #endif /* MAIN_H */
 
