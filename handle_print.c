@@ -1,3 +1,5 @@
+#include <stdarg.h>
+#include <unistd.h>
 #include "main.h"
 
 /**
@@ -6,7 +8,7 @@
  * @count: Pointer to count of characters printed
  * Return: Number of characters printed
  */
-int handle_print(const char *format, int *count)
+int handle_print(const char *format, va_list args, int *count))
 {
     int printed = 0;
 
