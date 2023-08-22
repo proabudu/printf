@@ -10,7 +10,7 @@ int main(void)
     len = _printf("Binary of %u is %b\n", 42, 42);
     _printf("Characters printed: %d\n", len);
 
-    // Add more test cases to thoroughly test your _printf function
+/* Add more test cases to thoroughly test your _printf function */
 
     return (0);
 }
