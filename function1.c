@@ -92,8 +92,9 @@ int handle_custom_conversion(const char *format, va_list args)
                 }
             }
             break;
-        // Add cases for other custom conversion specifiers...
-        default:
+/* Add cases for other custom conversion specifiers...
+        default: */
+
             write(1, format - 1, 1);
             write(1, format, 1);
             count += 2;
