@@ -36,6 +36,7 @@ int get_width(const char *format, va_list args);
 int handle_print(const char *format, va_list args, int *count);
 
 int get_width(const char *format);
+int handle_print(const char *format, int *count);
 
 #endif /* MAIN_H */
 

@@ -1,24 +1,37 @@
-#include <stdarg.h>
-#include <unistd.h>
 #include "main.h"
 
 /**
- * handle_print - Handle the '%' character
+ * handle_print - Handle the print conversion specifier
  * @format: Format string
- * @args: Variable argument list
  * @count: Pointer to count of characters printed
  * Return: Number of characters printed
  */
-int handle_print(const char *format, va_list args, int *count)
+int handle_print(const char *format, int *count)
 {
     int printed = 0;
 
-    if (*format != '%')
-        return 0; /* Not a valid print specifier */
+    if (format == NULL)
+        return (-1);
 
-    /* Handle the '%' character */
-    write(1, format, 1);
-    printed++;
+    switch (*format)
+    {
+        case 'c':
+            /* Handle %c conversion specifier */
+            break;
+        case 's':
+            /* Handle %s conversion specifier */
+            break;
+        case '%':
+            /* Handle %% conversion specifier */
+            break;
+        default:
+            /* Handle unknown specifier */
+            write(1, "%", 1);
+            write(1, format - 1, 1);
+            *count += 2;
+            printed += 2;
+            break;
+    }
 
     /* Update count and return printed */
     *count += printed;
