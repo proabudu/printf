@@ -58,7 +58,7 @@ int _print_u(va_list args)
     return (count + 1);
 }
 
-// Similar implementations for other conversion specifiers (o, x, X)...
+/*  Similar implementations for other conversion specifiers (o, x, X)... */
 
 /**
  * handle_conversion - Handle different conversion specifiers
