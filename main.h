@@ -1,9 +1,15 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#define FLAG_PLUS   (2 << 0)
+#define FLAG_PLUS   (1 << 0)
 #define FLAG_SPACE  (1 << 1)
 #define FLAG_HASH   (1 << 2)
+
+#define LENGTH_NONE 0
+#define LENGTH_HH   1
+#define LENGTH_H    2
+#define LENGTH_LL   3
+#define LENGTH_L    4
 
 #include <stdarg.h>
 
