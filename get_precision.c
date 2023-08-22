@@ -30,7 +30,7 @@ int get_precision(const char *format, va_list args)
         {
 /*  Handle '*' (variable precision) case */
             precision = va_arg(args, int);
-            format++; // Move past '*'
+            format++; /*  Move past '*' */
         }
         else
         {
