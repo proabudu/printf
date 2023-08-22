@@ -31,5 +31,9 @@ int _strlen(const char *str);
 char *_utoa(unsigned int num, char *str);
 char *_utoa_base(unsigned int num, char *str, int base, int uppercase);
 
+
+int get_width(const char *format, va_list args);
+int handle_print(const char *format, va_list args, int *count);
+
 #endif /* MAIN_H */
 
