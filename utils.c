@@ -1,6 +1,4 @@
-#include <unistd.h>
 #include "main.h"
-#include "string_utils.h"
 
 /**
  * _str_reverse - Reverse a string in-place

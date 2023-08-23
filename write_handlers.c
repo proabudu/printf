@@ -1,7 +1,4 @@
-#include <unistd.h>
 #include "main.h"
-#include <stdarg.h>
-#include "string_utils.h"
 
 char *_itoa(int num, char *str);
 int _strlen(const char *str);
