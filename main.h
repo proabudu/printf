@@ -15,7 +15,6 @@
 #include <stddef.h>
 #include <unistd.h>
 
-
 int _printf(const char *format, ...);
 
 int handle_conversion(const char *format, va_list args);
@@ -33,16 +32,11 @@ int _strlen(const char *str);
 char *_utoa(unsigned int num, char *str);
 char *_utoa_base(unsigned int num, char *str, int base, int uppercase);
 
-
 int get_width(const char *format, va_list args);
 int handle_print(const char *format, va_list args, int *count);
 int print_octal(unsigned int n);
 int print_hexadecimal(unsigned int n, int uppercase);
 void _str_reverse(char *str);
-char *_itoa(int num, char *str);
-int _strlen(const char *str);
-
-
 
 #endif /* MAIN_H */
 
