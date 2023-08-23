@@ -1,5 +1,6 @@
 #include <unistd.h>
 #include "main.h"
+#include "conversion_utils.h"
 
 /**
  * print_hexadecimal - Print an unsigned integer in hexadecimal
