@@ -1,17 +1,18 @@
 #include "main.h"
 
-int main(void)
+int main()
 {
-    int len;
+    int count = 0;
 
-    len = _printf("Hello, %s!\n", "world");
-    _printf("Characters printed: %d\n", len);
+    count = _printf("Hello, %s!\n", "world");
+    _printf("Characters printed: %d\n", count);
 
-    len = _printf("Binary of %u is %b\n", 42, 42);
-    _printf("Characters printed: %d\n", len);
+    count = _printf("Decimal: %d\n", 12345);
+    _printf("Characters printed: %d\n", count);
 
-/* Add more test cases to thoroughly test your _printf function */
+    count = _printf("Hexadecimal: %x\n", 255);
+    _printf("Characters printed: %d\n", count);
 
-    return (0);
+    return 0;
 }
 
